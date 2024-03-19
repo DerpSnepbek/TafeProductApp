@@ -41,11 +41,13 @@ namespace ProductApps
                 MessageBox.Show("Enter data again", "Data Entry Error");
             }
 
-            int totalamt = int.Parse(totalPaymentTextBlock.Text);
+            int totalAmt = int.Parse(totalPaymentTextBlock.Text);
             
-            totalamt =+ 25;
+            totalAmt = totalAmt + 25;
+            int totalfinalamt = totalAmt + 5;
+            totalChargeTextBlock.Text = totalAmt.ToString();            
 
-            totalChargeTextBlock.Text = totalamt.ToString();
+            totalWrapChargeTextBlock.Text = totalfinalamt.ToString();
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
