@@ -45,9 +45,12 @@ namespace ProductApps
             
             totalAmt = totalAmt + 25;
             int totalfinalamt = totalAmt + 5;
+            double totalGST = totalfinalamt * 1.1;
             totalChargeTextBlock.Text = totalAmt.ToString();            
 
             totalWrapChargeTextBlock.Text = totalfinalamt.ToString();
+
+            totalGSTTextBlock.Text = totalGST.ToString();
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)

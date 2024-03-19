@@ -11,9 +11,12 @@
         <Label Content="Total Charge after adding &#xA;the delivery charge ($25):" Width="150" VerticalAlignment="Bottom" Foreground="Black"  Margin="40,100" HorizontalAlignment="Left" Height="44"/>
         <TextBlock x:Name="totalChargeTextBlock" Text="" Width="50" Margin="40, 100" Height="50" VerticalAlignment="Bottom"/>
             
-                <Label Content="Total charge after &#xD;&#xA;adding the wrap charge:" Width="150" Foreground="Black"  Margin="40" VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="44"/>
-        <TextBlock x:Name="totalWrapChargeTextBlock" Text="" Width="50" Height="50" Margin="40" VerticalAlignment="Bottom"/>
-                   
+                <Label Content="Total charge after &#xD;&#xA;adding the wrap charge:" Width="150" Foreground="Black"  Margin="40, 60" VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="44"/>
+        <TextBlock x:Name="totalWrapChargeTextBlock" Text="" Width="50" Height="50" Margin="40, 60" VerticalAlignment="Bottom"/>
+
+        <Label Content="Total charge after &#xD;&#xA;GST @ 10%:" Width="150" Foreground="Black"  Margin="40,10" VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="44"/>
+        <TextBlock x:Name="totalGSTTextBlock" Text="" Width="50" Height="50" Margin="40,10" VerticalAlignment="Bottom"/>
+
         <TextBlock Name="totalPaymentTextBlock" HorizontalAlignment="Left" Height="23" Margin="164,167,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="75"/>
         <TextBox Name="productTextBox" HorizontalAlignment="Left" Height="24" Margin="122,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96"/>
         <TextBox Name="priceTextBox" HorizontalAlignment="Left" Height="24" Margin="122,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="77"/>
