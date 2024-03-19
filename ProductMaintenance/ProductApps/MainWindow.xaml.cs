@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices.ComTypes;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -39,6 +40,12 @@ namespace ProductApps
             {
                 MessageBox.Show("Enter data again", "Data Entry Error");
             }
+
+            int totalamt = int.Parse(totalPaymentTextBlock.Text);
+            
+            totalamt =+ 25;
+
+            totalChargeTextBlock.Text = totalamt.ToString();
         }
 
         private void clearButton_Click(object sender, RoutedEventArgs e)
